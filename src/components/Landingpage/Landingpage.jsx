@@ -46,10 +46,10 @@ function Landingpage() {
   const [navBarBackground, setNavBarBackgorund] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  console.log("screen.width", screen.width);
+
 
   const changeBackground = () => {
-    console.log(window.scrollY);
+
     if (screen.width < 1500) {
       if (window.scrollY >= 10) {
         setNavBarBackgorund(true);
@@ -75,16 +75,16 @@ function Landingpage() {
   return (
     <>
       {loading ? (
-        <Container fluid className="loading true">
+        <Container fluid true className="loading true">
           {" "}
           <Spinner animation="border" variant="dark" />{" "}
         </Container>
       ) : (
-        <Container fluid className="LandingPage__Container">
+        <Container fluid true className="LandingPage__Container">
           <Navbar fixed="top">
             <Container
               className={navBarBackground ? "navbar active" : "navbar false"}
-              fluid
+              fluid true
             >
               <Link
                 activeClass="active"
@@ -95,6 +95,7 @@ function Landingpage() {
               >
                 <Navbar.Brand>F&D</Navbar.Brand>
               </Link>
+              
               <Nav className="me-auto">
                 <Link
                   activeClass="active"
@@ -103,7 +104,7 @@ function Landingpage() {
                   duration={1000}
                   delay={100}
                 >
-                  <Nav.Link href="#home">Inicio</Nav.Link>
+                  <Nav>Inicio</Nav>
                 </Link>
                 <Link
                   activeClass="active"
@@ -112,7 +113,7 @@ function Landingpage() {
                   duration={1000}
                   delay={100}
                 >
-                  <Nav.Link>Sobre Nosotros</Nav.Link>
+                  <Nav>Sobre Nosotros</Nav>
                 </Link>
                 <Link
                   activeClass="active"
@@ -121,7 +122,7 @@ function Landingpage() {
                   duration={1000}
                   delay={100}
                 >
-                  <Nav.Link href="#photos">Fotos</Nav.Link>
+                  <Nav >Fotos</Nav>
                 </Link>
               </Nav>
             </Container>
@@ -208,7 +209,7 @@ function Landingpage() {
               </h2>
             </Col>
           </Row>
-          <Row fluid id="about" className="LandingPage__Container_Row_Cuatro">
+          <Row fluid true id="about" className="LandingPage__Container_Row_Cuatro">
             <Col xs={12} xl={6}>
               <p>
                 El disco bar Food & Drink, ubicado en la zona rosa de Pereira ,

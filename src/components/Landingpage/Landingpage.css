@@ -218,7 +218,15 @@ transition: 0.3s;
   width: 100%;
   font-size: 1.2rem;
   transition: 0.7s;
-  color: white;
+  color: black;
+
+  
+}
+
+.navbar a{
+  margin-right: 20px;
+  color: black;
+  cursor: pointer;
 }
 
 .navbar.false{
