@@ -75,16 +75,16 @@ function Landingpage() {
   return (
     <>
       {loading ? (
-        <Container fluid true className="loading true">
+        <Container fluid={+true} className="loading true">
           {" "}
           <Spinner animation="border" variant="dark" />{" "}
         </Container>
       ) : (
-        <Container fluid true className="LandingPage__Container">
+        <Container fluid={+true} className="LandingPage__Container">
           <Navbar fixed="top">
             <Container
               className={navBarBackground ? "navbar active" : "navbar false"}
-              fluid true
+              fluid={+true}
             >
               <Link
                 activeClass="active"
@@ -127,7 +127,7 @@ function Landingpage() {
               </Nav>
             </Container>
           </Navbar>
-          <Row id="home" fluid className="LandingPage__Container_NavBar">
+          <Row id="home" fluid={+true} className="LandingPage__Container_NavBar">
             <Col
               style={containerStyle}
               className="Landingpage__Container_image"
@@ -209,7 +209,7 @@ function Landingpage() {
               </h2>
             </Col>
           </Row>
-          <Row fluid true id="about" className="LandingPage__Container_Row_Cuatro">
+          <Row fluid={+true} id="about" className="LandingPage__Container_Row_Cuatro">
             <Col xs={12} xl={6}>
               <p>
                 El disco bar Food & Drink, ubicado en la zona rosa de Pereira ,
