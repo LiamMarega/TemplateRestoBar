@@ -219,28 +219,46 @@ transition: 0.3s;
   font-size: 1.2rem;
   transition: 0.7s;
   color: black;
-
-  
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar a{
   margin-right: 20px;
   color: black;
   cursor: pointer;
+  font-size: 20px;
+  align-content: center;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .navbar.false{
   background-color: transparent;
-  padding: 12px;
-
+  padding: 19px;
+  align-content: center;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .navbar.active{
   background-color: #f3bd6c;
-  padding: 12px;
-
-  
+  padding: 19px;
+  align-content: center;
+    align-items: center;
+    justify-content: center;
 }
+
+  .me-auto.navbar-nav{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .LandingPage__Container_Row_Cinco img {
