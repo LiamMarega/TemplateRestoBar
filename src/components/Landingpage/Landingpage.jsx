@@ -65,16 +65,16 @@ function Landingpage() {
 
   setTimeout(() => {
     setLoading(false);
-  }, 2500);
+  }, 3500);
 
   return (
     <>
-      {loading ? (
-        <Container fluid={+true} className="loading true">
+
+        <Container fluid={+true} className={loading ?  "loading true" : "loading false"}>
           {" "}
           <Spinner animation="border" variant="dark" />{" "}
         </Container>
-      ) : (
+
         <Container fluid={+true} className="LandingPage__Container">
           <Navbar fixed="top">
             <Container

@@ -9,6 +9,10 @@
   
 }
 
+.loading{
+  z-index: 5;
+}
+
 .loading.true{
   height: 100vh;
     background-color: #e7bb69;
@@ -16,6 +20,12 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    position: fixed;
+    overflow: hidden
+}
+
+.loading.false{
+  display: none;
 }
 
 .LandingPage__Container_NavBar {
@@ -222,6 +232,7 @@ transition: 0.3s;
   align-content: center;
   align-items: center;
   justify-content: center;
+  z-index: 4;
 }
 
 .navbar a{
