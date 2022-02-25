@@ -424,7 +424,6 @@ function Landingpage() {
           </Col>
         </Row>
       </Container>
-      )}
     </>
   );
 }
