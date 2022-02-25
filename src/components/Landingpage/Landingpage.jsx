@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import "./Landingpage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  cervezaLogo,
   imgFacebookLogo,
   imgInstagramLogo,
   imgBarLogo,
@@ -18,7 +17,6 @@ import {
   bar8,
   bar9,
   bar10,
-  
 } from "../../images/index.jsx";
 
 import {
@@ -46,10 +44,7 @@ function Landingpage() {
   const [navBarBackground, setNavBarBackgorund] = useState(false);
   const [loading, setLoading] = useState(true);
 
-
-
   const changeBackground = () => {
-
     if (screen.width < 1500) {
       if (window.scrollY >= 10) {
         setNavBarBackgorund(true);
@@ -70,7 +65,7 @@ function Landingpage() {
 
   setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, 2500);
 
   return (
     <>
@@ -95,7 +90,7 @@ function Landingpage() {
               >
                 <Navbar.Brand>F&D</Navbar.Brand>
               </Link>
-              
+
               <Nav className="me-auto">
                 <Link
                   activeClass="active"
@@ -122,12 +117,16 @@ function Landingpage() {
                   duration={1000}
                   delay={100}
                 >
-                  <Nav >Fotos</Nav>
+                  <Nav>Fotos</Nav>
                 </Link>
               </Nav>
             </Container>
           </Navbar>
-          <Row id="home" fluid={+true} className="LandingPage__Container_NavBar">
+          <Row
+            id="home"
+            fluid={+true}
+            className="LandingPage__Container_NavBar"
+          >
             <Col
               style={containerStyle}
               className="Landingpage__Container_image"
@@ -146,6 +145,7 @@ function Landingpage() {
                       src={imgFacebookLogo}
                       width="30px"
                       alt="facebook"
+                      loading="lazy"
                     />
                   </a>
                   <a
@@ -185,16 +185,14 @@ function Landingpage() {
                   alt="171x180"
                   src={imgBarLogo}
                 />
-                <Figure.Caption>
-                Disco bar Food & Drink.
-                </Figure.Caption>
+                <Figure.Caption>Disco bar Food & Drink.</Figure.Caption>
               </Figure>
             </Col>
             <Col xs={12} xl={6}>
               <p>
-                El Disco bar Food & Drink abrio sus puertas el dia 10 de
-                julio del 2009, estamos en Posada de Rengos (al lado de la
-                iglesia)y dista a 16 km de Cangas del Narcea.
+                El Disco bar Food & Drink abrio sus puertas el dia 10 de julio
+                del 2009, estamos en Posada de Rengos (al lado de la iglesia)y
+                dista a 16 km de Cangas del Narcea.
               </p>
             </Col>
           </Row>
@@ -209,7 +207,11 @@ function Landingpage() {
               </h2>
             </Col>
           </Row>
-          <Row fluid={+true} id="about" className="LandingPage__Container_Row_Cuatro">
+          <Row
+            fluid={+true}
+            id="about"
+            className="LandingPage__Container_Row_Cuatro"
+          >
             <Col xs={12} xl={6}>
               <p>
                 El disco bar Food & Drink, ubicado en la zona rosa de Pereira ,
@@ -239,7 +241,7 @@ function Landingpage() {
                   width={300}
                   height={300}
                   alt="171x180"
-                  src={bar7}
+                  src={bar9}
                 />
               </Figure>
             </Col>
@@ -262,7 +264,13 @@ function Landingpage() {
                 href="https://www.instagram.com/empresasoluciones/"
               >
                 {" "}
-                <Image className="imgHover" src={bar1} rounded roundedCircle />
+                <Image
+                  loading="lazy"
+                  className="imgHover"
+                  src={bar1}
+                  rounded
+                  roundedCircle
+                />
               </a>
             </Col>
             <Col xs={12} sm={12} xl={3}>
@@ -272,6 +280,7 @@ function Landingpage() {
               >
                 {" "}
                 <Image
+                  loading="lazy"
                   className="imgHover"
                   src={bar2}
                   rounded
@@ -286,6 +295,7 @@ function Landingpage() {
               >
                 {" "}
                 <Image
+                  loading="lazy"
                   className="imgHover"
                   src={bar3}
                   rounded
@@ -300,6 +310,7 @@ function Landingpage() {
               >
                 {" "}
                 <Image
+                  loading="lazy"
                   className="imgHover"
                   src={bar10}
                   rounded
@@ -314,8 +325,9 @@ function Landingpage() {
               >
                 {" "}
                 <Image
+                  loading="lazy"
                   className="imgHover"
-                  src={bar5}
+                  src={bar7}
                   rounded
                   roundedCircle
                 />{" "}
@@ -328,6 +340,7 @@ function Landingpage() {
               >
                 {" "}
                 <Image
+                  loading="lazy"
                   className="imgHover"
                   src={bar6}
                   rounded
@@ -342,6 +355,7 @@ function Landingpage() {
               >
                 {" "}
                 <Image
+                  loading="lazy"
                   className="imgHover"
                   src={bar8}
                   rounded
@@ -356,8 +370,9 @@ function Landingpage() {
               >
                 {" "}
                 <Image
+                  loading="lazy"
                   className="imgHover"
-                  src={bar9}
+                  src={bar5}
                   rounded
                   roundedCircle
                 />{" "}
@@ -378,12 +393,12 @@ function Landingpage() {
                     </li>
                   </a>
                   <a
-                target="_blank"
-                href="https://www.instagram.com/empresasoluciones/"
-              >
-                  <li>
-                    <ImLocation2 /> ENCONTRANOS
-                  </li>
+                    target="_blank"
+                    href="https://www.instagram.com/empresasoluciones/"
+                  >
+                    <li>
+                      <ImLocation2 /> ENCONTRANOS
+                    </li>
                   </a>
                   <a
                     href="https://api.whatsapp.com/send?phone=+543436203341&text=Hola,%20vi%20la%20plantilla%20de%20tu%20pagina%20web%20y%20me%20gustar%C3%ADa%20recibir%20mas%20informaci%C3%B3n!"

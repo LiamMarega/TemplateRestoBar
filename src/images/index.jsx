@@ -1,8 +1,8 @@
-export { default as cervezaLogo } from "./cervezaLogo.png"
-export { default as imgFacebookLogo } from "./facebookLogo.png" 
-export { default as imgInstagramLogo } from "./instagramLogo.png" 
-export { default as imgBarLogo } from "./logoBar.jpg"
-export { default as imgNavBar } from "./restaurant.jpg"
+
+export { default as imgFacebookLogo } from "./facebookLogo.webp" 
+export { default as imgInstagramLogo } from "./instagramLogo.webp" 
+export { default as imgBarLogo } from "./logoBar.webp"
+export { default as imgNavBar } from "./restaurant.webp"
 export { default as bar1 } from "./1.jpg"
 export { default as bar2 } from "./2.jpg"
 export { default as bar3 } from "./3.jpg"
