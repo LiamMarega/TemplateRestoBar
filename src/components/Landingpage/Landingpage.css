@@ -101,6 +101,16 @@ transition: 0.3s;
 
 .LandingPage__Container_Row_Cinco {
   height: 100%;
+  background-color: #301f1e;
+
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LandingPage__Container_Row_Seis {
+  height: 70%;
   background: #301f1e;
   background: -moz-linear-gradient(top, #301f1e 0%, #301f1e 31%, #000000 100%);
   background: -webkit-linear-gradient(
@@ -113,6 +123,29 @@ transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.googleMaps{
+  width: 100%;
+  height: 100%;
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.googleMapsCenter{
+  width: 50%;
+  height: 50%;
+}
+
+.LandingPage__Container_Row_Seis iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 32px 9px #D7A255; 
+  box-shadow: 5px 5px 32px 9px #D7A255;
 }
 
 .LandingPage__Container_Row_Footer {
