@@ -63,9 +63,16 @@ function Landingpage() {
     backgroundAttachment: `fixed`,
   };
 
-  setTimeout(() => {
-    setLoading(false);
-  }, 4500);
+ 
+
+  useEffect(() => {
+	setTimeout(() => {
+		setLoading(false);
+		window.scrollTo(0, 0);
+	  }, 4500);
+	
+  }, [])
+  
 
   return (
     <>

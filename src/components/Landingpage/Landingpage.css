@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap');
+@import "../../Variables/Variables.css";
+
 .LandingPage__Container {
   height: 100vh;
-  background-color: #523835;
+  background-color: var(--color-primario);
   z-index: 2;
-  -webkit-box-shadow: -1px -36px 42px 6px #523835;
-  box-shadow: -1px -36px 42px 6px #523835;
+  -webkit-box-shadow: -1px -36px 42px 6px var(--color-primario);
+  box-shadow: -1px -36px 42px 6px var(--color-primario);
   color: white;
   
 }
@@ -15,7 +17,7 @@
 
 .loading.true{
   height: 100vh;
-    background-color: #e7bb69;
+    background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
     align-content: center;
@@ -290,7 +292,7 @@ transition: 0.3s;
 
 
 .navbar.active{
-  background-color: #f3bd6c;
+  background-color: var(--color-terciario);
   padding: 19px;
   align-content: center;
     align-items: center;
