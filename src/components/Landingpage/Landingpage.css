@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap');
-@import "../../Variables/Variables.css";
+@import '../../Variables/Variables.css';
 
 .LandingPage__Container {
   height: 100vh;
@@ -8,25 +8,25 @@
   -webkit-box-shadow: -1px -36px 42px 6px var(--color-primario);
   box-shadow: -1px -36px 42px 6px var(--color-primario);
   color: white;
-  
+  font-size: 1.5rem;
 }
 
-.loading{
+.loading {
   z-index: 5;
 }
 
-.loading.true{
+.loading.true {
   height: 100vh;
-    background-color: var(--color-secundario);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    position: fixed;
-    overflow: hidden
+  background-color: var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
 }
 
-.loading.false{
+.loading.false {
   display: none;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .LandingPage__Container_NavBar img:hover {
-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .LandingPage__Container_NavBar img:hover {
@@ -62,13 +62,12 @@ transition: 0.3s;
   align-items: center;
   justify-content: center;
   font-family: 'Architects Daughter', cursive;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .LandingPage__Container_Row_Tres {
   height: 50%;
-  -webkit-box-shadow: inset 0px -50px 50px 0px #301f1e,
-    inset 0px 50px 50px 0px #301f1e;
+  -webkit-box-shadow: inset 0px -50px 50px 0px #301f1e, inset 0px 50px 50px 0px #301f1e;
   box-shadow: inset 0px -50px 50px 0px #301f1e, inset 0px 50px 50px 0px #301f1e;
   display: flex;
   align-items: center;
@@ -77,8 +76,6 @@ transition: 0.3s;
   font-size: 5rem;
 }
 
-
-
 .LandingPage__Container_Row_Cuatro {
   height: 100%;
   -webkit-box-shadow: inset 0px 50px 25px -7px #382524;
@@ -86,26 +83,35 @@ transition: 0.3s;
   background: #301f1e;
   display: flex;
   align-items: center;
+  text-align: start;
   justify-content: center;
   font-family: 'Architects Daughter', cursive;
-  font-size: 2.5vmin !important;
-  
 }
 
-.LandingPage__Container_Row_Cuatro img{
+.ContainerSection {
+  width: 100%;
+  display: flex;
+  background-color: red;
+
+  margin: auto;
+}
+
+.LandingPage__Container_Row_Cuatro p {
+  font-size: 1.5rem;
+}
+
+.LandingPage__Container_Row_Cuatro img {
   transition: 0.3s;
 }
 
-.LandingPage__Container_Row_Cuatro img:hover{
-
-  border: 5px solid #F1BF6C;
+.LandingPage__Container_Row_Cuatro img:hover {
+  border: 5px solid #f1bf6c;
 }
 
 .LandingPage__Container_Row_Cinco {
   height: 100%;
   background-color: #301f1e;
 
- 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,29 +121,23 @@ transition: 0.3s;
   height: 70%;
   background: #301f1e;
   background: -moz-linear-gradient(top, #301f1e 0%, #301f1e 31%, #000000 100%);
-  background: -webkit-linear-gradient(
-    top,
-    #301f1e 0%,
-    #301f1e 31%,
-    #000000 100%
-  );
+  background: -webkit-linear-gradient(top, #301f1e 0%, #301f1e 31%, #000000 100%);
   background: linear-gradient(to bottom, #301f1e 0%, #301f1e 31%, #000000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.googleMaps{
+.googleMaps {
   width: 100%;
   height: 100%;
   display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
-.googleMapsCenter{
+.googleMapsCenter {
   width: 50%;
   height: 50%;
 }
@@ -146,12 +146,11 @@ transition: 0.3s;
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  -webkit-box-shadow: 5px 5px 32px 9px #D7A255; 
-  box-shadow: 5px 5px 32px 9px #D7A255;
+  -webkit-box-shadow: 5px 5px 32px 9px #d7a255;
+  box-shadow: 5px 5px 32px 9px #d7a255;
 }
 
 .LandingPage__Container_Row_Footer {
-
   background: #000000;
   display: flex;
   align-items: center;
@@ -194,19 +193,18 @@ transition: 0.3s;
   font-family: 'Pacifico', cursive;
 }
 
-.Landing__Letras h1{
+.Landing__Letras h1 {
   width: 100%;
   height: 100%;
   font-size: 8rem;
 }
 
-.LandingRedes{
+.LandingRedes {
   width: 100%;
   height: 100%;
   display: flex;
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 
 .logos {
   filter: blur(0px) brightness(100%) saturate(102%);
@@ -245,7 +243,7 @@ transition: 0.3s;
   transition: 0.3s;
 }
 .imgHover:hover {
-  border: 5px solid #F1BF6C;
+  border: 5px solid #f1bf6c;
 }
 
 .centradoFooter a {
@@ -254,11 +252,11 @@ transition: 0.3s;
 }
 
 .centradoFooter a:hover {
-  color: #F1BF6C;
+  color: #f1bf6c;
   text-decoration: none !important;
 }
 
-.navbar{
+.navbar {
   top: -10px;
   width: 100%;
   font-size: 1.2rem;
@@ -270,48 +268,44 @@ transition: 0.3s;
   z-index: 4;
 }
 
-.navbar a{
+.navbar a {
   margin-right: 20px;
   color: black;
   cursor: pointer;
   font-size: 20px;
   align-content: center;
-    align-items: center;
-    justify-content: center;
-
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar.false{
+.navbar.false {
   background-color: transparent;
   padding: 19px;
   align-content: center;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-.navbar.active{
+.navbar.active {
   background-color: var(--color-terciario);
   padding: 19px;
   align-content: center;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-  .me-auto.navbar-nav{
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
-
+.me-auto.navbar-nav {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .LandingPage__Container_Row_Cinco img {
     width: 200px;
     height: 200px;
   }
- 
+
   .imgOcultar {
     display: none;
   }
