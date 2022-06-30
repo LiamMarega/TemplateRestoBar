@@ -43,12 +43,12 @@ function Landingpage() {
 
   return (
     <>
-      <Container fluid={+true} className={loading ? 'loading true' : 'loading false'}>
+      <Container fluid className={loading ? 'loading true' : 'loading false'}>
         <Spinner animation='border' variant='dark' />
       </Container>
-      <Container fluid={+true} className='LandingPage__Container'>
+      <Container fluid className='LandingPage__Container'>
         <Navbar fixed='top'>
-          <Container className={navBarBackground ? 'navbar active' : 'navbar false'} fluid={+true}>
+          <Container className={navBarBackground ? 'navbar active' : 'navbar false'} fluid>
             <Link activeClass='active' to='home' smooth={true} duration={1000} delay={100}>
               <Navbar.Brand>F&D</Navbar.Brand>
             </Link>
@@ -66,7 +66,7 @@ function Landingpage() {
             </Nav>
           </Container>
         </Navbar>
-        <Row id='home' fluid={+true} className='LandingPage__Container_NavBar'>
+        <Row id='home' fluid className='LandingPage__Container_NavBar'>
           <Col style={containerStyle} className='Landingpage__Container_image'>
             <div>
               <div className='Landing__Letras'>
@@ -100,13 +100,12 @@ function Landingpage() {
         <Row style={containerStyle} className='LandingPage__Container_Row_Tres'>
           <Col xxl={12}>
             <h2>
-              {' '}
               <ImLocation2 /> Paraná, Entre Riós
             </h2>
           </Col>
         </Row>
         <Container fluid className='ContainerSection' style={{ padding: 0 }}>
-          <Row fluid={+true} id='about' className='LandingPage__Container_Row_Cuatro'>
+          <Row fluid id='about' className='LandingPage__Container_Row_Cuatro'>
             <Col xs={12} xl={6}>
               <p>
                 El disco bar Food & Drink, ubicado en la zona rosa de Pereira , es uno de los locales mas climatizados el cual disfruta de un ambiente divertido con una decoración espectacular, suambiente moderno te asegura una noche divertida única y inolvidable. Su estructura se presenta como una obra 160 metros, por 90 metros aproximadamente capacidad aproximadamente para 250 personas y
@@ -116,17 +115,14 @@ function Landingpage() {
                 losprecios son accesibles puedes tener una noche inolvidable y divertida.
               </p>
             </Col>
-            <Col className='imgOcultar' xs={12} xl={6}>
-              <Figure className='LandingPage__LogoBar'>
-                <Figure.Image width={300} height={300} alt='171x180' src={bar9} />
-              </Figure>
+            <Col className='imgOcultar' xs={12} xl={4}>
+              <Image width={300} height={500} alt='171x180' src={bar9} />
             </Col>
           </Row>
         </Container>
         <Row style={containerStyle} className='LandingPage__Container_Row_Tres'>
           <Col xxl={12}>
             <h2>
-              {' '}
               <AiFillPhone /> +54 343 620-3341
             </h2>
           </Col>
@@ -134,54 +130,46 @@ function Landingpage() {
         <Row id='photos' className='LandingPage__Container_Row_Cinco'>
           <Col xs={12} sm={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
               <Image loading='lazy' className='imgHover' src={bar1} rounded roundedCircle />
             </a>
           </Col>
           <Col xs={12} sm={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
-              <Image loading='lazy' className='imgHover' src={bar2} rounded roundedCircle />{' '}
+              <Image loading='lazy' className='imgHover' src={bar2} rounded roundedCircle />
             </a>
           </Col>
           <Col xs={12} sm={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
-              <Image loading='lazy' className='imgHover' src={bar3} rounded roundedCircle />{' '}
+              <Image loading='lazy' className='imgHover' src={bar3} rounded roundedCircle />
             </a>
           </Col>
           <Col className='imgOcultar' xs={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
-              <Image loading='lazy' className='imgHover' src={bar10} rounded roundedCircle />{' '}
+              <Image loading='lazy' className='imgHover' src={bar10} rounded roundedCircle />
             </a>
           </Col>
           <Col className='imgOcultar' xs={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
-              <Image loading='lazy' className='imgHover' src={bar7} rounded roundedCircle />{' '}
+              <Image loading='lazy' className='imgHover' src={bar7} rounded roundedCircle />
             </a>
           </Col>
           <Col className='imgOcultar' xs={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
-              <Image loading='lazy' className='imgHover' src={bar6} rounded roundedCircle />{' '}
+              <Image loading='lazy' className='imgHover' src={bar6} rounded roundedCircle />
             </a>
           </Col>
           <Col className='imgOcultar' xs={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
-              <Image loading='lazy' className='imgHover' src={bar8} rounded roundedCircle />{' '}
+              <Image loading='lazy' className='imgHover' src={bar8} rounded roundedCircle />
             </a>
           </Col>
           <Col className='imgOcultar' xs={12} xl={3}>
             <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-              {' '}
-              <Image loading='lazy' className='imgHover' src={bar5} rounded roundedCircle />{' '}
+              <Image loading='lazy' className='imgHover' src={bar5} rounded roundedCircle />
             </a>
           </Col>
         </Row>
-        <Row fluid={+true} id='about' className='LandingPage__Container_Row_Seis'>
+        <Row fluid id='about' className='LandingPage__Container_Row_Seis'>
           <Col className='googleMaps' xs={12} xl={12}>
             <div className='googleMapsCenter'>
               <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54285.58907590346!2d-60.55006831376418!3d-31.747313687934355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1646008001231!5m2!1ses-419!2sar' allowFullScreen='' loading='lazy'></iframe>
