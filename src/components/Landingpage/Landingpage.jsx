@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Landingpage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { imgFacebookLogo, imgInstagramLogo, imgBarLogo, imgNavBar, bar1, bar2, bar3, bar4, bar5, bar6, bar7, bar8, bar9, bar10 } from '../../images/index.jsx';
+import { imgFacebookLogo, Whatsapp, imgInstagramLogo, imgBarLogo, imgNavBar, bar1, bar2, bar3, bar4, bar5, bar6, bar7, bar8, bar9, bar10 } from '../../images/index.jsx';
 
 import { Container, Row, Col, Image, Figure, Nav, Navbar, Spinner } from 'react-bootstrap';
 
@@ -48,7 +48,7 @@ function Landingpage() {
       </Container>
       <Container fluid className='LandingPage__Container'>
         <Navbar fixed='top'>
-          <Container className={navBarBackground ? 'navbar active' : 'navbar false'} fluid>
+          <Container fluid className={navBarBackground ? 'navbar active' : 'navbar false'}>
             <Link activeClass='active' to='home' smooth={true} duration={1000} delay={100}>
               <Navbar.Brand>F&D</Navbar.Brand>
             </Link>
@@ -66,18 +66,21 @@ function Landingpage() {
             </Nav>
           </Container>
         </Navbar>
-        <Row id='home' fluid className='LandingPage__Container_NavBar'>
+        <Row id='home' className='LandingPage__Container_NavBar'>
           <Col style={containerStyle} className='Landingpage__Container_image'>
             <div>
               <div className='Landing__Letras'>
                 <h1>Food & Drink</h1>
               </div>
               <div className='LandingRedes'>
-                <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-                  <img className='logos' src={imgFacebookLogo} width='30px' alt='facebook' loading='lazy' />
+                <a target='_blank' href='https://api.whatsapp.com/send?phone=+543436203341&text=Hola,%20vi%20la%20plantilla%20de%20tu%20pagina%20web%20y%20me%20gustar%C3%ADa%20recibir%20mas%20informaci%C3%B3n!'>
+                  <img className='logos' src={Whatsapp} width='30px' alt='Whatsapp' loading='lazy' />
                 </a>
                 <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
-                  <img className='logos' src={imgInstagramLogo} width='30px' alt='imgInstagramLogo' />
+                  <img className='logos' src={imgInstagramLogo} width='30px' alt='imgInstagramLogo' loading='lazy' />
+                </a>
+                <a target='_blank' href='https://www.instagram.com/empresasoluciones/'>
+                  <img className='logos' src={imgFacebookLogo} width='30px' alt='facebook' loading='lazy' />
                 </a>
               </div>
             </div>
@@ -105,7 +108,7 @@ function Landingpage() {
           </Col>
         </Row>
         <Container fluid className='ContainerSection' style={{ padding: 0 }}>
-          <Row fluid id='about' className='LandingPage__Container_Row_Cuatro'>
+          <Row id='about' className='LandingPage__Container_Row_Cuatro'>
             <Col xs={12} xl={6}>
               <p>
                 El disco bar Food & Drink, ubicado en la zona rosa de Pereira , es uno de los locales mas climatizados el cual disfruta de un ambiente divertido con una decoración espectacular, suambiente moderno te asegura una noche divertida única y inolvidable. Su estructura se presenta como una obra 160 metros, por 90 metros aproximadamente capacidad aproximadamente para 250 personas y
@@ -169,10 +172,10 @@ function Landingpage() {
             </a>
           </Col>
         </Row>
-        <Row fluid id='about' className='LandingPage__Container_Row_Seis'>
+        <Row id='about' className='LandingPage__Container_Row_Seis'>
           <Col className='googleMaps' xs={12} xl={12}>
             <div className='googleMapsCenter'>
-              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54285.58907590346!2d-60.55006831376418!3d-31.747313687934355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1646008001231!5m2!1ses-419!2sar' allowFullScreen='' loading='lazy'></iframe>
+              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54285.58907590346!2d-60.55006831376418!3d-31.747313687934355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1646008001231!5m2!1ses-419!2sar' loading='lazy'></iframe>
             </div>
           </Col>
         </Row>
@@ -200,7 +203,7 @@ function Landingpage() {
                     <AiFillMail /> CORREO
                   </li>
                 </a>
-                <a href='https://api.whatsapp.com/send?phone=+543436203341&text=Hola,%20vi%20la%20plantilla%20de%20tu%20pagina%20web%20y%20me%20gustar%C3%ADa%20recibir%20mas%20informaci%C3%B3n!' target='_blank' rel='noopener noreferrer'>
+                <a href='https://www.instagram.com/empresasoluciones/' target='_blank' rel='noopener noreferrer'>
                   <li>
                     <AiFillInstagram /> INSTAGRAM
                   </li>
